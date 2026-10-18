@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Title"
+                android:layout_width="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:text="@string/app_name" />
+
+            <Button
+                android:id="@+id/btn_help"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Section"
+            android:layout_marginTop="8dp"
+            android:text="@string/section_filter" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:lineSpacingExtra="4dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lockdown_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:text="@string/lockdown_warning"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_filter"
+            style="@style/WideButton" />
+
+        <TextView
+            style="@style/Section"
+            android:text="@string/section_sites" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_domain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/domain_hint"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textUri" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/no_domains"
+            style="@style/Hint"
+            android:text="@string/no_domains" />
+
+        <Button
+            android:id="@+id/btn_toggle_list"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/domain_list"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/Section"
+            android:text="@string/section_password" />
+
+        <TextView
+            android:id="@+id/password_hint"
+            style="@style/Hint" />
+
+        <Button
+            android:id="@+id/btn_set_password"
+            style="@style/WideButton" />
+
+        <Button
+            android:id="@+id/btn_random_password"
+            style="@style/WideButton"
+            android:text="@string/random_password" />
+
+        <Button
+            android:id="@+id/btn_remove_password"
+            style="@style/WideButton"
+            android:text="@string/remove_password" />
+
+        <TextView
+            style="@style/Section"
+            android:text="@string/section_protection" />
+
+        <TextView
+            style="@style/Hint"
+            android:text="@string/protection_hint" />
+
+        <Button
+            android:id="@+id/btn_admin"
+            style="@style/WideButton" />
+
+        <Button
+            android:id="@+id/btn_guard"
+            style="@style/WideButton" />
+
+        <TextView
+            style="@style/Section"
+            android:text="@string/section_emergency" />
+
+        <TextView
+            style="@style/Hint"
+            android:text="@string/emergency_hint" />
+
+        <Button
+            android:id="@+id/btn_show_code"
+            style="@style/WideButton"
+            android:text="@string/show_code" />
+
+        <Button
+            android:id="@+id/btn_enter_code"
+            style="@style/WideButton"
+            android:text="@string/enter_code" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Blocker</string>
+    <string name="guard_label">Blocker Guard</string>
+    <string name="guard_description">Prevents turning off the website filter while it is locked. It closes the Settings screens that would deactivate uninstall protection, disconnect or forget the filter VPN, or turn off this guard. It reads only the Settings app and nothing else.</string>
+    <string name="vpn_session">Blocker website filter</string>
+
+    <string name="section_filter">Filter</string>
+    <string name="section_sites">Blocked websites</string>
+    <string name="section_password">Password</string>
+    <string name="section_protection">Protection</string>
+    <string name="section_emergency">Emergency unlock</string>
+
+    <string name="start_filter">Start filter</string>
+    <string name="stop_filter">Stop filter</string>
+    <string name="domain_hint">e.g. facebook.com</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="no_domains">No websites blocked yet. Subdomains are blocked too (facebook.com also blocks www.facebook.com and m.facebook.com).</string>
+    <string name="invalid_domain">That doesn\'t look like a website address</string>
+
+    <string name="set_password">Set password</string>
+    <string name="change_password">Change password</string>
+    <string name="random_password">Set random password (you won\'t know it)</string>
+    <string name="remove_password">Remove password</string>
+    <string name="password_hint_locked">Locked. You need the password to stop the filter, remove websites or turn off protection. Adding websites is always allowed.</string>
+    <string name="password_hint_unlocked">No password set. Anyone can stop the filter and the protection does nothing.</string>
+
+    <string name="enable_admin">Enable uninstall protection</string>
+    <string name="disable_admin">Disable uninstall protection</string>
+    <string name="enable_guard">Enable Settings guard (accessibility)</string>
+    <string name="guard_settings">Open accessibility settings</string>
+    <string name="protection_hint">Uninstall protection makes the app a device admin, so it can\'t be uninstalled, force stopped or have its data cleared.\n\nThe Settings guard closes the screens that would deactivate the device admin, disconnect the VPN or turn off the guard itself.\n\nOn Android 13+ you may first need to open App info for Blocker, tap ⋮ and choose \"Allow restricted settings\" before the guard can be enabled.</string>
+    <string name="admin_explanation">This stops Blocker from being uninstalled while the filter is locked. To uninstall, unlock with your password or with the emergency code.</string>
+
+    <string name="emergency_hint">If you forgot the password (or set a random one), you can unlock everything with the long emergency code. It is shown on a separate screen. Copy, paste and screenshots are disabled, so you have to write it on paper and type it back in.</string>
+    <string name="show_code">Show emergency code</string>
+    <string name="enter_code">Enter emergency code</string>
+
+    <string name="status_filter_on">Filter: running</string>
+    <string name="status_filter_off">Filter: stopped</string>
+    <string name="status_filter_broken">Filter: should run but is stopped. Tap \"Start filter\".</string>
+    <string name="status_locked">Lock: locked with password</string>
+    <string name="status_unlocked">Lock: no password</string>
+    <string name="status_admin_on">Uninstall protection: on</string>
+    <string name="status_admin_off">Uninstall protection: off</string>
+    <string name="status_guard_on">Settings guard: on</string>
+    <string name="status_guard_off">Settings guard: off</string>
+    <string name="status_count">%d websites blocked</string>
+
+    <string name="password_title">Enter password</string>
+    <string name="new_password_title">New password</string>
+    <string name="password">Password</string>
+    <string name="password_again">Password again</string>
+    <string name="passwords_differ">The passwords don\'t match</string>
+    <string name="password_empty">The password can\'t be empty</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="password_set">Password set</string>
+    <string name="password_removed">Password removed</string>
+    <string name="random_title">Set a random password?</string>
+    <string name="random_message">A long random password will be set and never shown to anyone. After that, the only way to stop the filter or uninstall the app is the emergency code.</string>
+    <string name="random_done">Random password set. Only the emergency code can unlock it now.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="notification_channel">Filter running (can be turned off)</string>
+    <string name="alert_channel">Filter alerts</string>
+    <string name="notification_off_title">Website filter was turned off</string>
+    <string name="notification_off_text">Tap to turn it back on</string>
+
+    <string name="guard_blocked">Blocker is locked. Unlock it in the app first.</string>
+    <string name="admin_disable_warning">Blocker is locked. Unlock it with the password or the emergency code inside the app first.</string>
+
+    <string name="emergency_code_title">Emergency code</string>
+    <string name="emergency_code_info">Write this code on paper. Then go back, tap \"Enter emergency code\" and type it in exactly. Upper and lower case matter, spaces don\'t. The code never uses 0, O, o, 1, l or I.</string>
+    <string name="emergency_unlock_title">Emergency unlock</string>
+    <string name="emergency_unlock_info">Type the emergency code you wrote on paper. Pasting is disabled. Entering the correct code removes the password, stops the filter and turns off uninstall protection, so you can uninstall the app.</string>
+    <string name="code_hint">Emergency code</string>
+    <string name="code_progress">%1$d of %2$d characters</string>
+    <string name="unlock">Unlock</string>
+    <string name="code_wrong">The code is wrong. Check it for typos.</string>
+    <string name="unlocked_title">Unlocked</string>
+    <string name="unlocked_message">The password was removed, the filter was stopped and uninstall protection was turned off. You can now uninstall Blocker or turn off the Settings guard.</string>
+
+    <!-- Help cards -->
+    <string name="help">Help</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_back">Back</string>
+    <string name="onboarding_next">Next</string>
+    <string name="ob_finish">Start using Blocker</string>
+    <string name="ob_counter">Step %1$d of %2$d</string>
+    <string name="screen_not_found">This screen isn\'t available on your phone. Look for it in Settings.</string>
+
+    <string name="ob_welcome_title">Welcome to Blocker</string>
+    <string name="ob_welcome_body">Blocker blocks websites you don\'t want to visit, in every browser and app.\n\nIt already blocks well-known adult sites, YouTube and X. You can add more in the app.\n\nEverything happens on your phone. Nothing is sent anywhere, and there are no ads and no accounts.\n\nThese cards walk you through the setup. Swipe or tap Next. You can open them again any time with the Help button.</string>
+
+    <string name="ob_filter_title">Start the filter</string>
+    <string name="ob_filter_body">Android will ask you to allow a VPN connection.\n\nBlocker\'s VPN runs only on your phone. It checks the names of the websites your apps look up and stops the blocked ones. Page content, passwords and messages never pass through it.\n\nWhile the filter runs, Android shows a key icon in the status bar.</string>
+    <string name="ob_filter_done">✓ The filter is running</string>
+
+    <string name="ob_notification_title">Hide the notification (optional)</string>
+    <string name="ob_notification_body">Android requires apps that keep running in the background to show a notification. Blocker\'s notification is empty, and you can turn it off completely. The filter keeps running.\n\nOn the screen that opens, switch off notifications for Blocker.</string>
+    <string name="ob_notification_action">Notification settings</string>
+    <string name="ob_notification_done">✓ Notifications are off</string>
+
+    <string name="ob_background_title">Let it run in the background</string>
+    <string name="ob_background_body">Some phones stop background apps to save battery, and that would stop the filter too. Allow Blocker to run without battery restrictions.</string>
+    <string name="ob_background_other">In the list, find Blocker and choose \"Don\'t optimize\" or \"Unrestricted\".</string>
+    <string name="ob_background_xiaomi">On Xiaomi phones:\n• In App info, open Battery saver and choose \"No restrictions\".\n• Turn on Autostart for Blocker. Without it, the filter can\'t start after a restart.</string>
+    <string name="ob_background_action">Battery settings</string>
+    <string name="ob_autostart_action">Autostart settings</string>
+    <string name="ob_background_done">✓ Battery restrictions are off</string>
+
+    <string name="ob_always_on_title">Start automatically after a restart</string>
+    <string name="ob_always_on_body">Turn on \"Always-on VPN\" for Blocker. Android then starts the filter as soon as the phone starts.\n\nOn the screen that opens, tap ⚙ next to Blocker and switch on \"Always-on VPN\".\n\n⚠ Leave \"Block connections without VPN\" OFF. Blocker\'s VPN only checks website names, so with that option on, no internet works at all.</string>
+    <string name="ob_always_on_action">VPN settings</string>
+    <string name="ob_always_on_done">✓ Always-on VPN is on</string>
+
+    <string name="ob_admin_title">Protect against uninstalling</string>
+    <string name="ob_admin_body">Make Blocker a device admin. While it is one, Android won\'t let anyone uninstall Blocker, force stop it or clear its data.\n\nBlocker doesn\'t use any device admin powers. It can\'t lock, wipe or change your phone.</string>
+    <string name="ob_admin_done">✓ Uninstall protection is on</string>
+
+    <string name="ob_guard_title">Turn on the Settings guard</string>
+    <string name="ob_guard_body">While Blocker is locked, the guard stops you from switching the protection off in Settings. It closes only these screens: deactivating the device admin, uninstalling Blocker, Blocker\'s VPN settings and the guard\'s own accessibility page.\n\nThe guard uses Android\'s accessibility feature. It looks only at the Settings app, and it doesn\'t read, store or send anything else.\n\nOn the screen that opens, find \"Blocker Guard\" (it may be under \"Downloaded apps\" or \"Installed apps\") and turn it on.</string>
+    <string name="ob_guard_restricted">If Android says \"Restricted setting\": come back here, tap App info, tap ⋮ in the top-right corner, choose \"Allow restricted settings\" and try again.</string>
+    <string name="ob_guard_action">Accessibility settings</string>
+    <string name="ob_app_info_action">App info</string>
+    <string name="ob_guard_done">✓ The guard is on</string>
+
+    <string name="ob_password_title">Lock it with a password</string>
+    <string name="ob_password_body">Do this last. Once Blocker is locked, the guard won\'t let you open the settings from the previous steps.\n\nIn the app, tap \"Set password\". From then on, stopping the filter, removing websites or turning off the protection needs the password.\n\nWant to be really strict? Tap \"Set random password\" instead. That sets a long password nobody knows.\n\nThere is always a way back: the app shows a long emergency code. You can\'t copy it, so you have to write it on paper and type it back in. That\'s on purpose, so unlocking takes real effort.</string>
+    <string name="lockdown_warning">⚠ \"Block connections without VPN\" is on, so no internet works. Tap here, open ⚙ next to Blocker and switch it off. Leave \"Always-on VPN\" on.</string>
+    <string name="show_list">Show list (%d)</string>
+    <string name="hide_list">Hide list (%d)</string>
+</resources>
